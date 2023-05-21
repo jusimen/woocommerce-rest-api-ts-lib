@@ -35,7 +35,7 @@
     "prepack": "npm run clean && npm run build:cjs:esm && npm run build:types",
     "semantic-release": "semantic-release",
     "commit": "cz",
-    "postinstall": "tsc --outDir ./build"
+    "postinstall": "npm run prepack"
   },
   "lint-staged": {
     "*.{ts,js,json}": [
